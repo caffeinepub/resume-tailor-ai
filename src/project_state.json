@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Resume tailoring application with AI-powered customization",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero background illustration with professional resume or document theme, gradient subtle tones (hero-background.dim_1920x1080.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-new-home-page-component-that-serves-as-the-landing-page-with-an-aesthetic-design-that-entices-users-to-explore-the-resume-tailoring-feature",
+      "title": "Create a new Home page component that serves as the landing page with an aesthetic design that entices users to explore the resume tailoring feature",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-prominent-call-to-action-button-on-the-home-page-labeled-tailor-resume-that-navigates-users-to-the-resume-tailoring-interface",
+      "title": "Add a prominent call-to-action button on the home page labeled 'Tailor Resume' that navigates users to the resume tailoring interface",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-app-tsx-to-implement-routing-that-shows-the-new-home-page-by-default-and-navigates-to-tailorresumepage-when-the-call-to-action-is-clicked",
+      "title": "Update App.tsx to implement routing that shows the new home page by default and navigates to TailorResumePage when the call-to-action is clicked",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-home-page-with-compelling-copy-and-visual-elements-that-communicate-the-value-proposition-of-ai-powered-resume-tailoring-to-attract-users",
+      "title": "Design the home page with compelling copy and visual elements that communicate the value proposition of AI-powered resume tailoring to attract users",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create aesthetic home page with button to access resume tailoring feature",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Resume Tailor",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

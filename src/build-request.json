@@ -1,0 +1,96 @@
+{
+  "kind": "build_request",
+  "title": "Create aesthetic home page with call-to-action for resume tailoring",
+  "projectName": "Resume Tailor",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a new Home page component that serves as the landing page with an aesthetic design that entices users to explore the resume tailoring feature",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "home page is more asthhetic give user to lure to open the tailoring section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page exists with visually appealing design distinct from the current tailor page",
+        "Design uses cohesive color palette and typography consistent with the existing ink/paper theme",
+        "Layout draws attention to the primary call-to-action button"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a prominent call-to-action button on the home page labeled 'Tailor Resume' that navigates users to the resume tailoring interface",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "a button shows ttailor resume tthen go for tthis ttailor ai tto appear"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays 'Tailor Resume' text clearly",
+        "Clicking the button transitions user to the resume tailoring page (TailorResumePage)",
+        "Button is visually emphasized as the primary action on the page"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Update App.tsx to implement routing that shows the new home page by default and navigates to TailorResumePage when the call-to-action is clicked",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "tthen go for tthis ttailor ai tto appear"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page renders at the root route",
+        "Tailor resume page is accessible via navigation from home page",
+        "Navigation flow works in both directions if needed"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Design the home page with compelling copy and visual elements that communicate the value proposition of AI-powered resume tailoring to attract users",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "give user to lure to open the tailoring section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page includes headline and supporting text explaining resume tailoring benefits",
+        "Visual hierarchy guides user attention toward the call-to-action",
+        "Design feels polished and professional to build trust"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing ink/paper aesthetic using the OKLCH color system defined in index.css",
+    "Do not modify the core TailorResumePage functionality or components",
+    "Preserve the existing header with logo and PublishGuidance in App.tsx"
+  ],
+  "nonGoals": [
+    "Redesigning the existing resume tailoring interface",
+    "Adding authentication or user accounts to the home page",
+    "Creating multiple landing page variants or A/B testing"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero background illustration with professional resume or document theme, gradient subtle tones (hero-background.dim_1920x1080.png)"
+    ],
+    "edits": []
+  }
+}

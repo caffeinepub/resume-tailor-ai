@@ -1,0 +1,71 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Create aesthetic home page with call-to-action for resume tailoring",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a new Home page component that serves as the landing page with an aesthetic design that entices users to explore the resume tailoring feature",
+      "acceptanceCriteria": [
+        "Landing page exists with visually appealing design distinct from the current tailor page",
+        "Design uses cohesive color palette and typography consistent with the existing ink/paper theme",
+        "Layout draws attention to the primary call-to-action button"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create a new HomePage component featuring a hero section with the generated background image from frontend/public/assets/generated/hero-background.dim_1920x1080.png, a headline communicating the value proposition of AI-powered resume tailoring, supporting copy that explains benefits, and a prominent call-to-action button. Use the existing OKLCH color system from index.css to maintain the ink/paper aesthetic with proper visual hierarchy that guides attention to the CTA."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a prominent call-to-action button on the home page labeled 'Tailor Resume' that navigates users to the resume tailoring interface",
+      "acceptanceCriteria": [
+        "Button displays 'Tailor Resume' text clearly",
+        "Clicking the button transitions user to the resume tailoring page (TailorResumePage)",
+        "Button is visually emphasized as the primary action on the page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add a visually prominent button component labeled 'Tailor Resume' that uses React Router's navigation to transition to the /tailor route. Style the button to stand out as the primary action using the existing color palette, ensuring high contrast and clear affordance for interaction."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Update App.tsx to implement routing that shows the new home page by default and navigates to TailorResumePage when the call-to-action is clicked",
+      "acceptanceCriteria": [
+        "Home page renders at the root route",
+        "Tailor resume page is accessible via navigation from home page",
+        "Navigation flow works in both directions if needed"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Install and configure React Router (react-router-dom) to enable routing. Set up Routes with the root path (/) rendering HomePage and /tailor rendering TailorResumePage. Preserve the existing header with logo and PublishGuidance, and maintain the footer with Caffeine.ai attribution. Wrap the routed content appropriately within the existing layout structure."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Design the home page with compelling copy and visual elements that communicate the value proposition of AI-powered resume tailoring to attract users",
+      "acceptanceCriteria": [
+        "Page includes headline and supporting text explaining resume tailoring benefits",
+        "Visual hierarchy guides user attention toward the call-to-action",
+        "Design feels polished and professional to build trust"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Refine the HomePage component to include a compelling headline that captures attention (e.g., 'Transform Your Resume for Every Opportunity'), supporting body text that explains how AI-powered tailoring matches resumes to job descriptions, and secondary value propositions such as time savings and improved interview chances. Use typography scale and spacing from Tailwind configuration to establish clear visual hierarchy. Position the hero background image from frontend/public/assets/generated/hero-background.dim_1920x1080.png to enhance the professional aesthetic without overwhelming the content."
+        }
+      ]
+    }
+  ]
+}

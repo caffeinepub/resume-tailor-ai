@@ -1,0 +1,1 @@
+export { TailorResumePage } from './TailorResumePage';

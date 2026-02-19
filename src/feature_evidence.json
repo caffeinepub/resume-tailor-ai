@@ -1,0 +1,81 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-new-home-page-component-that-serves-as-the-landing-page-with-an-aesthetic-design-that-entices-users-to-explore-the-resume-tailoring-feature",
+      "featureTitle": "Create a new Home page component that serves as the landing page with an aesthetic design that entices users to explore the resume tailoring feature",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-prominent-call-to-action-button-on-the-home-page-labeled-tailor-resume-that-navigates-users-to-the-resume-tailoring-interface",
+      "featureTitle": "Add a prominent call-to-action button on the home page labeled 'Tailor Resume' that navigates users to the resume tailoring interface",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-app-tsx-to-implement-routing-that-shows-the-new-home-page-by-default-and-navigates-to-tailorresumepage-when-the-call-to-action-is-clicked",
+      "featureTitle": "Update App.tsx to implement routing that shows the new home page by default and navigates to TailorResumePage when the call-to-action is clicked",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-the-home-page-with-compelling-copy-and-visual-elements-that-communicate-the-value-proposition-of-ai-powered-resume-tailoring-to-attract-users",
+      "featureTitle": "Design the home page with compelling copy and visual elements that communicate the value proposition of AI-powered resume tailoring to attract users",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "blob-storage@4.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
